@@ -14,3 +14,6 @@ ITERATORS NOTES
 * return array length: same as original
 
 # `select` or filter if you're not ruby
+* inside the block: true or false (truthy or falsy)
+* final return value: array with the _original_ items for which the block returned true (or truthy)
+* return array length: less than or equal to the original, we lose the items for which the condition is falsy

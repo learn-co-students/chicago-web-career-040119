@@ -120,6 +120,7 @@ def game_hash
   }
 end
 
+
 def num_points_scored(player_name)
   # return that player's points
   find_player(player_name)[:points]
@@ -142,6 +143,9 @@ def get_players
   all_players
 end
 
+binding.pry
+
+
 def find_player(player_name)
   # find the player whose name matches the argument 'player_name'
   get_players.find do |player|
@@ -155,15 +159,37 @@ end
 # Define a method called get_names that takes an array of instructors
 # and returns just their names.
 instructors = [
-  {name: 'Noa', hometown: 'Detroit, MI'},
-  {name: 'Bruce', hometown: 'Brooklyn, NY'},
-  {name: 'Rishi', hometwon: 'North Brunswick, NJ'}
+  {name: 'Noa', hometown: 'Detroit, MI', age: 14},
+  {name: 'Bruce', hometown: 'Brooklyn, NY', age: 65},
+  {name: 'Rishi', hometwon: 'North Brunswick, NJ', age: 21}
 ]
 
 def get_names(instructors)
-
+  instructors.map do |instructor|
+    instructor[:name]
+  end
 end
 
+def puts_names(instructors)
+  instructors.each do |instructor|
+    puts instructor[:name]
+  end
+end
+
+
+def get_hometowns(instructors)
+  instructors.map do |instructor|
+    instructor[:hometown]
+  end
+end
+
+def can_drink_legally_us(instructors)
+  instructors.select do |instructor|
+    instructor[:age] >= 21
+  end
+end
+
+puts can_drink_legally_us(instructors)
 
 # EXERCISE
 # What do the following return?
