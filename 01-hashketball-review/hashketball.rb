@@ -161,7 +161,9 @@ instructors = [
 ]
 
 def get_names(instructors)
-
+  instructors.map do |instructor|
+    instructor[:name]
+  end
 end
 
 
