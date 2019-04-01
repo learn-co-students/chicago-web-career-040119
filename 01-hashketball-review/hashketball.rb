@@ -165,23 +165,15 @@ def get_names(instructors)
 end
 
 
+# EXERCISE
+# What do the following return?
 
+arr = (1..100).to_a
 
-# def get_players
-#
-# end
+arr.map do |num|
+  num.even?
+end
 
-
-
-# # EXERCISE
-# # What do the following return?
-#
-# arr = (1..100).to_a
-#
-# arr.map do |num|
-#   num.even?
-# end
-#
-# arr.select do |num|
-#   7
-# end
+arr.select do |num|
+  7
+end
