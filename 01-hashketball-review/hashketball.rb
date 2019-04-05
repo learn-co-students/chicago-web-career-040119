@@ -168,6 +168,8 @@ def get_names(instructors)
   instructors.map do |instructor|
     instructor[:name]
   end
+<<<<<<< HEAD
+=======
 end
 
 def puts_names(instructors)
@@ -187,6 +189,7 @@ def can_drink_legally_us(instructors)
   instructors.select do |instructor|
     instructor[:age] >= 21
   end
+>>>>>>> 4b66290837419a451106ad7f480dcc4a0e81131b
 end
 
 puts can_drink_legally_us(instructors)
