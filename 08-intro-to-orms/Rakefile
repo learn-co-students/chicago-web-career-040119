@@ -1,0 +1,12 @@
+require_relative 'config/environment'
+
+desc 'Loads up a console!'
+task :console do
+  Pry.start
+end
+
+desc 'Drop the base'
+task :drop do
+  DB[:conn].execute("DROP TABLE tweets;")
+  puts "D-d-d-d-drop the base"
+end
