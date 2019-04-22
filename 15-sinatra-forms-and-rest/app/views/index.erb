@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% @shows.each do |show| %>
+      <h1> <%= show.name %></h1>
+      <h2><%= show.network %></h2>
+      <h3><%= show.genre %></h3>
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> <%= @show.name %></h1>
+    <h2><%= @show.network %></h2>
+    <h3><%= @show.genre %></h3>
+
+    <form action="/shows/<%=@show.id %>" method="POST">
+      <input type="hidden" name='_method' value='PATCH'>
+
+      <p>Show Name: <input type="text" name="name"></p>
+      <p>Show Network: <input type="text" name="network"></p>
+      <p>Show Genre: <input type="text" name="genre"></p>
+      <input type="submit">
+    </form>
+  </body>
+</html>
