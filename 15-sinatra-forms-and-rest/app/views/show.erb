@@ -1,0 +1,9 @@
+<h1> <%= @show.name %></h1>
+<h2><%= @show.network %></h2>
+<h3><%= @show.genre %></h3>
+
+<form action='/shows/<%=@show.id%>' method="POST">
+  <input type="hidden" name='_method' value='DELETE'>
+
+  <input type="submit" value="Delete">
+</form>
