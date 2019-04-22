@@ -1,0 +1,8 @@
+This is just text!
+
+<p>This can be HTML</p>
+
+<% @books.each_with_index do |book, index| %>
+  <h1><a href="books/<%= book.id %>"><%= book.title %></a></h1>
+  <p><%= book.truncated_snippet %></p>
+<% end %>
