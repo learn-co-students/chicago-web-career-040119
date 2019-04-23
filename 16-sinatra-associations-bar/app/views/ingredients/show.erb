@@ -1,0 +1,13 @@
+<h1><%= @ingredient.name %></h1>
+
+<% if @ingredient.cocktails.length > 0 %>
+  <h2>Used in:</h2>
+  <ul>
+    <% @ingredient.cocktails.each do |c| %>
+      <li><a href="/cocktails/<%= c.id %>"><%= c.name %></a> | $<%= c.price %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<a href="/ingredients">Go to all ingredients</a>
+<a href="/ingredients/<%= @ingredient.id %>/edit">Edit this ingredient</a>

@@ -1,0 +1,12 @@
+<h1>Users Galore!</h1>
+
+<a href="/users/new">Make a new user</a>
+
+<ul>
+  <% @users.each do |user| %>
+    <li><a href="/users/<%= user.id %>"><%= user.name %></a></li>
+  <% end %>
+</ul>
+
+
+<!-- yoo -->

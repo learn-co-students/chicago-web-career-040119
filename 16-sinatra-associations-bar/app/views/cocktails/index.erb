@@ -1,0 +1,12 @@
+<h1>Cocktails Galore!</h1>
+
+<a href="/cocktails/new">Make a new cocktail</a>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+    <li><a href="/cocktails/<%= cocktail.id %>"><%= cocktail.name %></a> | $<%= cocktail.price %></li>
+  <% end %>
+</ul>
+
+
+<!-- yoo -->

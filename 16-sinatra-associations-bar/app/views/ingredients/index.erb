@@ -1,0 +1,12 @@
+<h1>Ingredients Galore!</h1>
+
+<a href="/ingredients/new">Make a new ingredient</a>
+
+<ul>
+  <% @ingredients.each do |ingredient| %>
+    <li><a href="/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></li>
+  <% end %>
+</ul>
+
+
+<!-- yoo -->

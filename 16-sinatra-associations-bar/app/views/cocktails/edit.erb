@@ -1,0 +1,33 @@
+<h1>Edit Cocktail</h1>
+
+<form action="/cocktails/<%= @cocktail.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH" />
+  Name:
+  <input type="text" name="cocktail[name]" value="<%= @cocktail.name %>" />
+  Price:
+  <input type="text" name="cocktail[price]" value="<%= @cocktail.price %>" />
+  User:
+  <select name="cocktail[user_id]">
+    <% @users.each do |user| %>
+      <option value="<%= user.id %>"
+        <% if @cocktail.user.id == user.id %>selected<% end %>
+      ><%= user.name %> </option>
+    <% end %>
+  </select>
+
+  <% @ingredients.each do |ingredient| %>
+    <div>
+      <input type="checkbox" id="<%= ingredient.id %>" name="cocktail[ingredient_ids][]" value="<%= ingredient.id %>"
+        <% if @cocktail.ingredient_ids.include?(ingredient.id) %>checked<% end %>
+      >
+      <label for="<%= ingredient.id %>"><%= ingredient.name %></label>
+    </div>
+  <% end %>
+
+  <input type="submit" value="Edit cocktail!">
+</form>
+
+<form action="/cocktails/<%= @cocktail.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE" />
+  <input type="submit" value="Delete this cocktail">
+</form>

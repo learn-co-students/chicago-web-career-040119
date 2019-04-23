@@ -1,0 +1,13 @@
+<h1><%= @user.name %></h1>
+
+<% if @user.cocktails.length > 0 %>
+  <h2>Here be my cocktails:</h2>
+  <ul>
+    <% @user.cocktails.each do |cocktail| %>
+      <li><a href="/cocktails/<%= cocktail.id %>"><%= cocktail.name %></a> | $<%= cocktail.price %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<a href="/users">Go to all users</a>
+<a href="/users/<%= @user.id %>/edit">Edit this user</a>

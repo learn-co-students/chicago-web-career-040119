@@ -1,0 +1,17 @@
+<h1><%= @cocktail.name %></h1>
+
+<p>This costs $<%= @cocktail.price %></p>
+
+<p>Created by <a href="/users/<%= @cocktail.user.id%>"><%= @cocktail.user.name %></a></p>
+
+<% if @cocktail.ingredients.length > 0 %>
+  <h2>Made of:</h2>
+  <ul>
+    <% @cocktail.ingredients.each do |i| %>
+      <li><a href="/ingredients/<%= i.id %>"><%= i.name %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<a href="/cocktails">Go to all cocktails</a>
+<a href="/cocktails/<%= @cocktail.id %>/edit">Edit this cocktail</a>
