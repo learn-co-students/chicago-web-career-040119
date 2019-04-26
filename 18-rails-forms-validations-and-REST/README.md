@@ -1,24 +1,3 @@
-# README
+# Rails Forms and Validations - The "Doc Office" Sandbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Here's a tiny app that we used to play around with different approaches to Rails forms, to demonstrate how strong parameters need to be set up in Rails controllers, and to show off the power of Active Record model validations when we need to gently nudge a user toward providing valid input.
