@@ -1,0 +1,17 @@
+<% if @errors %>
+  <% @errors.each do |error| %>
+    <p style="color: red"><%= error %></p>
+  <% end %>
+<% end %>
+
+
+<!-- Second Form-->
+<%= form_for @doctor do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :speciality %>
+  <%= f.text_field :speciality %>
+
+  <%= f.submit %>
+<% end %>

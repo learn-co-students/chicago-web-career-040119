@@ -1,0 +1,5 @@
+<p><%= @doctor.name %> has speciality <%= @doctor.speciality %>.</p>
+
+<p><%= link_to 'Delete Doctor', @doctor, method: :delete, data: { confirm: 'For realsies?' } %></p>
+<p><%= link_to 'Edit Doctor', @doctor %></p>
+<p><%= link_to "Back to Doctors", doctors_path %></p>
