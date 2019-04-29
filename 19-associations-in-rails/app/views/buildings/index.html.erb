@@ -1,0 +1,6 @@
+<% @buildings.each do |building| %>
+  <p><%= building.name %></p>
+  <p><%= building.address %></p>
+  <p> <%= building.year %></p>
+  <p>Designed by <%= building.architect.name %></p>
+<% end %>
