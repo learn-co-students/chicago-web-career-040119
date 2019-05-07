@@ -1,0 +1,14 @@
+<h1>Login</h1>
+
+<% if @errors %>
+  <% @errors.each do |e| %>
+    <p><%= e %></p>
+  <% end %>
+<% end %>
+
+<%= form_tag '/sessions' do %>
+  <%= text_field_tag 'username', nil, placeholder: 'Username' %><br>
+  <!-- REMINDER: Never name an input field 'password_digest', use 'password' instead! -->
+  <%= password_field_tag 'password', nil, placeholder: 'Password' %><br>
+  <%= submit_tag 'Log Me In!' %>
+<% end %>

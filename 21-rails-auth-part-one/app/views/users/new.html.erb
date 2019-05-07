@@ -1,0 +1,23 @@
+<h1>Create Your Account!</h1>
+<% if @errors %>
+  <% @errors.each do |e| %>
+    <p><%= e %></p>
+  <% end %>
+<% end %>
+
+
+<% if @current_user %>
+  <p>Logged in with user: <%= @current_user.username %></p>
+<% end %>
+
+<%= form_for @user do |f| %>
+  <%= f.text_field :username, placeholder: 'Username' %><br>
+  <%= f.password_field :password, placeholder: 'Password' %><br>
+  <%= f.password_field :password_confirmation, placeholder: 'Confirm Password' %><br>
+  <%= f.submit %>
+<% end %>
+
+<br>
+<br>
+<br>
+<%= button_to 'Log Out', '/logout', method: 'delete' %>
