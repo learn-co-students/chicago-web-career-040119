@@ -2,7 +2,7 @@
 
 ## the Malone Posting app where you can use `post '/malones'` to post your Post Malones...
 
-![Xzibit laughing, evoking memories of those "yo dawg I heard you like X so I put X in your X" pseudo-recursive memes](https://i.ytimg.com/vi/fWsMzyhbl9I/maxresdefault.jpg
+![Xzibit laughing, evoking memories of those "yo dawg I heard you like X so I put X in your X" pseudo-recursive memes](https://i.ytimg.com/vi/fWsMzyhbl9I/maxresdefault.jpg)
 
 ## User Stories
 
