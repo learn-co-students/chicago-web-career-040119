@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Soul Kiss",
+      "author": "Shay Youngblood",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31AYTZWPCPL._SX309_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Children of Blood & Bone",
+      "author": "Tomi Adeyemi",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61SB-c0mHGL._SX329_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "White Teeth",
+      "author": "Zadie Smith",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/412BMH3wiIL._SX322_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 4,
+      "author": "Zadie Smith",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41oS2tKs2TL._SX324_BO1,204,203,200_.jpg",
+      "title": "On Beauty"
+    },
+    {
+      "id": 5,
+      "author": "Zadie Smith",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Vfwe7%2BJ5L._SX324_BO1,204,203,200_.jpg",
+      "title": "Swing Time"
+    },
+    {
+      "id": 6,
+      "author": "Zadie Smith",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/517BqHtwIKL._SX324_BO1,204,203,200_.jpg",
+      "title": "Feel Free"
+    },
+    {
+      "id": 7,
+      "author": "Maya Angelou",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41SKsBaGXRL._SX301_BO1,204,203,200_.jpg",
+      "title": "I Know Why the Caged Bird Sings"
+    },
+    {
+      "id": 8,
+      "author": "Toni Morrison ",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/413-xT0izBL._SX322_BO1,204,203,200_.jpg",
+      "title": "The Bluest Eye"
+    },
+    {
+      "title": "The Long Way To A Small Angry Planet",
+      "author": "Becky Chambers",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Keam5kKXL._SX330_BO1,204,203,200_.jpg",
+      "id": 9
+    },
+    {
+      "title": "The Bird King",
+      "author": "G. Willow Wilson",
+      "img": "https://groveatlantic.com/core/wp-content/uploads/2018/03/BirdKingHC_Front-340x509.jpg",
+      "id": 10
+    },
+    {
+      "title": "Fire and Blood",
+      "author": "George RR Martin",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Fire_%26_Blood_%282018%29_hardcover.jpg/220px-Fire_%26_Blood_%282018%29_hardcover.jpg",
+      "id": 11
+    }
+  ]
+}
