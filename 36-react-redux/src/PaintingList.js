@@ -4,40 +4,20 @@ import SearchBar from "./SearchBar"
 import {connect} from "react-redux"
 class PaintingList extends Component {
 
-
-
-  // onChangeInput = input => {
-  //   this.setState({
-  //     searchInput: input
-  //   })
-  // }
-
-  // filterPaintings = () => {
-  //   return this.state.paintings.filter(painting => painting.title.toLowerCase().includes(this.state.searchInput.toLowerCase()))
-  // }
-
-  // upvote = artId => {
-  //   let paintingIndex = this.state.paintings.findIndex(painting => painting.id === artId)
-  //   let newState = [...this.state.paintings]
-  //   newState[paintingIndex].votes += 1
-  //   this.setState(newState)
-  // }
+  filterPaintings = () => {
+    return this.props.paintings.filter(painting => painting.title.toLowerCase().includes(this.props.searchInput.toLowerCase()))
+  }
 
   render(){
-
-    const renderAllPaintings = this.props.paintings.map(painting => {
+    const renderAllPaintings = this.filterPaintings().map(painting => {
       return <PaintingCard
-      title={painting.title}
-      artistName={painting.artist.name}
-      image={painting.image}
-      votes={painting.votes}
-      id={painting.id}
+      painting = {painting}
       key={painting.id}
       />
     })
-    console.log(this.props)
     return(
       <div>
+        <SearchBar />
         {renderAllPaintings}
       </div>
     )
