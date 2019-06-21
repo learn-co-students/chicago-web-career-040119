@@ -3,17 +3,15 @@ import {upvote} from "./actions"
 import {connect} from "react-redux"
 class PaintingCard extends Component {
 
-
-
   render(){
-    console.log(this.props)
+    let {id, title, artist, image} = this.props.painting
     return (
       <li>
-        <h3 >{this.props.title}</h3>
-        <p>By {this.props.artistName}</p>
-        <img src={this.props.image}/>
+        <h3 >{title}</h3>
+        <p>By {artist.name}</p>
+        <img src={image}/>
         <br/>
-        <button onClick={() => this.props.dispatchUpvote(this.props.id)}>Votes: {this.props.votes}</button>
+        <button onClick={() => this.props.dispatchUpvote(id)}>Votes: {this.props.votes}</button>
       </li>
     )
   }
